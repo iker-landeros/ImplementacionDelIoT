@@ -1,4 +1,4 @@
-/* Hoja de estilo para página de registro - SmartFlex Training */
+/* Hoja de estilo para página de inicio de sesión - SmartFlex Training */
 
 html{
     font-size:16px;
@@ -14,16 +14,15 @@ html{
 
 }
 
-h1,h2,label {
+h1 {
     font-size: 5rem;
     font-weight: 700;
-    color: #2C228C;
+    color: #F5F8FA;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 1%;
     padding: 0%;
 }
-
 
 .content {
     border-color: none;
@@ -42,27 +41,16 @@ h1,h2,label {
     align-items: center;
     display: block;
 }
-h2,label {
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: left;
-    margin-left:24%;
-}
-
-label{
-    font-size: 1.5rem;
-    display:block;
-}
 
 .form {
-    background-image: linear-gradient(to bottom right, #2C228C, #308AC9);
+    background-image: linear-gradient(to bottom right, #84D2F6, #F5F8FA);
     padding: 10px;
     width: 50%;
     padding-left: 30px;
     margin: 1.2%;
     font-size: 1.5rem;
     align-items: center;
-    color: #F5F8FA;
+    color: #2C228C;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     display: inline-block;
@@ -71,22 +59,13 @@ label{
 }
 
 ::placeholder {
-    color: #84D2F6;
-}
-
-#fname {
-    width: 22%;
-    margin-right: 1.6%;
-}
-#lname {
-    width: 22%;
-    margin-left: 1.6%;
+    color: #59A5D8;
 }
 
 
-.crear-cuenta {
-    background-color: #2C228C;
-    color: #F5F8FA;
+.iniciar-sesion {
+    background-color: #F5F8FA;
+    color: #2C228C;
     border-radius: 10px;
     border: none;
     font-size: 2rem;
