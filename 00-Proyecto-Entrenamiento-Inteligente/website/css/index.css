@@ -1,0 +1,64 @@
+/*Hoja de estilo para página de inicio - SmartFlex Training*/
+
+html{
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+    height:100%;
+    background-image:linear-gradient(to bottom right, #2C228C, #308AC9);
+}
+
+.Header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+    text-align: center;
+}
+
+#logo{
+    height: 25%;
+    width: 25%;
+    margin-left: 70%;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #F5F8FA;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom:0%;
+    padding-bottom: 0%;
+}
+
+p{
+    font-size: 2.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #84D2F6;
+    text-align: center;
+    margin-top:2%
+}
+
+#inicio-sesion{
+    background-color: #F5F8FA;
+    color: #2C228C;
+    border-radius: 10px;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1% 2%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+#registro{
+    color: #F5F8FA;
+    text-align:right;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+}

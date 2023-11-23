@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Inicia sesión en tu cuenta de SmartFlex Training.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- Title -->
+    <title>SmartFlex Training</title>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio-sesion.css">
+
+</head>
+
+<!-- Body -->
+
+<body>
+
+    <!-- Logo on Top -->
+    <image id="logo" src="assets/images/SmartFlexLogoBlue.png" alt="SmartFlex Training Logo" />
+
+
+    <section class="content">
+        <div>
+            <h1>Crea tu perfil</h1>
+        </div>
+
+        <!-- Form -->
+        <div class="registro">
+            <form>
+                <input class="form" type="text" id="fname" name="fname" placeholder="Nombre...">
+
+                <input class="form" type="text" id="lname" name="lname" placeholder="Apellido...">
+
+                <input class="form" type="text" id="username" name="username" placeholder="Nombre de usuario...">
+
+                <input class="form" type="email" id="email" name="email" placeholder="Correo electrónico...">
+
+                <input class="form" type="password" id="password" name="password" placeholder="Contraseña...">
+
+                <input class="form" type="password" id="password_c" name="password_c"
+                    placeholder="Confirma tu contrase&ntilde;a...">
+
+
+                <h2>Completemos tu perfil</h2>
+
+                <label for="dob">Fecha de nacimiento</label>
+                <input class="form" type="date" id="dob" name="dob" placeholder="Fecha de nacimiento...">
+
+                <input class="form" type="number" id="weight" name="weight" placeholder="Peso (kg)..." min="1"
+                    max="100">
+
+                <input class="form" type="number" id="height" name="height" placeholder="Altura (cm)..." min="100"
+                    max="200">
+
+                <label for="sex">Sexo</label>
+                <select class="form" id="sex" name="sex">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+
+            </form>
+            <input class="crear-cuenta" type="button" value="Crear cuenta">
+        </div>
+    </section>
+
+</body>
+
+</html>
