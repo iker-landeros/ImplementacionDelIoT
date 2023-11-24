@@ -99,3 +99,7 @@ label{
     float: right;
     margin-right: 24%;
 }
+
+option{
+    background-color: #2C228C;
+}

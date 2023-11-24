@@ -45,7 +45,7 @@ h1 {
 .form {
     background-image: linear-gradient(to bottom right, #84D2F6, #F5F8FA);
     padding: 10px;
-    width: 50%;
+    width: 40%;
     padding-left: 30px;
     margin: 1.2%;
     font-size: 1.5rem;
@@ -53,9 +53,10 @@ h1 {
     color: #2C228C;
     font-family: 'Poppins', sans-serif;
     text-align: left;
-    display: inline-block;
+    display: block;
     border-radius: 50px;
     border-style: hidden;
+    transform: translateX(64%);
 }
 
 ::placeholder {
@@ -76,5 +77,5 @@ h1 {
     text-decoration: none;
     text-align: right;
     float: right;
-    margin-right: 24%;
+    margin-right: 30%;
 }
