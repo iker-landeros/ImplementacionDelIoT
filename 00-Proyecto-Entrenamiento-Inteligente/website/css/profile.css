@@ -13,36 +13,152 @@ body{
     height:100%;
 }
 
+/*.Info, .Workout{
+    box-sizing: border-box;
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 2%;
+    background-color: #f5f8faa9;
+    border-radius: 10px;
+}*/
+
 .Info{
+    box-sizing: border-box;
+    width: 60%;
+    height: 95%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin: 1%;
+    padding: 0%;
+    /*background-color: #f5f8faa9;
+    border-radius: 10px;*/
+    top:0%;
+}
+
+.Workout{
+    box-sizing: border-box;
+    width: 34%;
+    height: 95%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin: 1%;
+    padding: 0%;
+    /*background-color: #f5f8faa9;
+    border-radius: 10px;*/
+
+    position:absolute;
+}
+
+
+.TopInfo{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 1%;
+    padding: 2%;
+    top: 0%;
+}
+
+.BottomInfo{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 0%;
+    padding: 0%;
+    bottom: 0%;
+    left:0%;
+    /*background-color: #f5f8faa9;
+    border-radius: 10px;*/
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2C228C;
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom:0%;
+    padding-bottom: 2%;    
+}
+
+p.tTop{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom:2%;
+    padding-bottom: 0%;
+}
+
+p.tBottom{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom:0%;
+    padding-bottom: 0%;
+}
+
+.InfoPersonal{
     box-sizing: border-box;
     width: 60%;
     max-height: 100%;
     display: inline-block;
     flex-direction: column;
     justify-content: left;
-    margin: 1%;
-    padding: 2%;
-    background-color: #f5f8faa9;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin: 0%;
+    padding: 1%;
 }
 
-.Workout{
+.LastSession{
     box-sizing: border-box;
-    width: 34%;
+    width: 39%;
     max-height: 100%;
     display: inline-block;
     flex-direction: column;
     justify-content: left;
-    margin: 1%;
-    padding: 2%;
-    background-color: #f5f8faa9;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    transform: translateY(-50%);
+    margin: 0%;
+    padding: 1%;
+}
+
+.PreferredTraining{
+    box-sizing: border-box;
+    width: 39%;
+    max-height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+    margin: 0%;
+    padding: 1%;
+    transform: translateY(-15%);
+}
+
+.Anuncio{
+    width: 59%;
+    height: 59%;
+    
+    margin: 0%;
+    padding: 0%;
+    right:0%;
+    display:inline;
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 650;
     color: #2C228C;
     text-align: left;
@@ -51,3 +167,120 @@ h1{
     padding-bottom: 0%;
 }
 
+.TopWorkout{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin-top:10%;
+    margin-bottom: 3%;
+    padding: 0%;
+    top: 0%;
+    /*background-color: #f5f8faa9;
+    border-radius: 10px;*/
+}
+
+.WorkoutImage{
+    width: 100%;
+    height: 120%;
+    border-radius:20px;
+}
+
+.BottomWorkout{
+    box-sizing: border-box;
+    width: 100%;
+    height: 33%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 5%;
+    padding: 0%;
+    bottom: 0%;
+    left:0%;
+    /*background-color: #f5f8faa9;
+    border-radius: 10px;*/
+}
+
+.ChooseTraining{
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 2%;
+    bottom: 0%;
+    left:0%;
+    background-color: #93B9E8;
+    border-radius: 30px;
+    border: 5px solid #2C228C;
+    align-items: center;
+}
+
+h2{
+    font-size: 1.7rem;
+    font-weight: 650;
+    color: #2C228C;
+    text-align: center;
+    margin-top: 13%;
+    margin-bottom:3%;
+    padding-bottom: 0%;
+}
+
+input[type=radio]{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1%;
+    margin-left: 11%;
+    border-color: #2C228C;
+    color:#2C228C;
+    background-color: #2C228C;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2C228C;
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom:0%;
+    padding-bottom: 0%;
+    text-align: right;
+}
+
+.StartTraining{
+    box-sizing: border-box;
+    width: 35%;
+    height: 85%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 2%;
+    bottom: 0%;
+    left:0%;
+    background-color: #2C228C;
+    border-radius: 30px;
+    border: 5px solid #93B9E8;
+    align-items: center;
+    transform: translateY(-40%);
+}
+
+.StartButton{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #F5F8FA;
+    transform: translate(1%, 65%);
+}
