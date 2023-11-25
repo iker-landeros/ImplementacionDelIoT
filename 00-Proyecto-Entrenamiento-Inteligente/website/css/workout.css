@@ -29,18 +29,18 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: rgb(220, 12, 12);
 }
 
-/*.Bottom{
+.Bottom{
     box-sizing: border-box;
     height:30%;
     width:100%;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     justify-content: left;
-    background-color: rgb(217, 220, 12);
-}*/
+    align-items: center;
+    align-content: center;
+}
 
 #logo{
     position: absolute;
@@ -96,7 +96,7 @@ button{
     text-align: center;
     width: 30%;  
     height: 85%;
-    margin-top: 1.5%;
+    margin-top: 2.5%;
     margin-left: 2.5%;
     font-size:2rem;
     font-family: 'Poppins', sans-serif;
@@ -107,5 +107,44 @@ button{
    
     background-image: linear-gradient(to bottom right, #84D2F6, #F5F8FA);
     border: 1px solid #F5F8FA;
+    border-radius: 20px;
+}
+
+p.tTop{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom:5%;
+    padding-bottom: 0%;
+}
+
+p.tBottom{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom:0%;
+    padding-bottom: 0%;
+}
+
+progress{
+    width: 95%;
+    height: 160px;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    padding-bottom: 0%;
+    border: 3px solid #F5F8FA;
+    border-radius: 20px;
+    accent-color: #F5F8FA;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+    background-image: linear-gradient(to bottom right, #308AC9, #F5F8FA);;
     border-radius: 20px;
 }
