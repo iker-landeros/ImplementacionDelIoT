@@ -1,22 +1,33 @@
-let express = require('express')
-let mysql = require('mysql')
-let router = express.Router()
+const express = require('express');
+const cors = require('cors');
 
-let config = {
-    host:'servidoriot2023.cisvdnwsdecj.us-east-1.rds.amazonaws.com',
-    user:'admin',
-    password:'Iklandia1!',
-    database:'SmartFlex'
-}
+const entrenamiento = require('./routes/entrenamiento');
 
-let connection = mysql.createConnection(config)
-
-router.get('/', (req, res) => {
-    res.send('Ruta app!')
-})
-
-router.get('/login')
+const app = express();
 
 
+app.use(express.json());
 
-module.exports = router;
+app.use(cors({
+    origin: (origin, callback) => {
+        const VALID_DOMAINS = [
+            "http://127.0.0.1:5500/"
+        ]
+
+        if (VALID_DOMAINS.includes(origin)) {
+            return callback(null, true)
+        }
+
+        // Si origin no existe o no tiene nada, es porque
+        // la petición se está haciendo desde el mismo dominio
+        if (!origin){
+            return callback(null, true)
+        }
+
+        return callback(new Error("No permitido por CORS"))
+    }
+}))
+
+app.use('/entrenamiento',entrenamiento);
+
+app.listen(3000, () => console.log('Server started on port 3000'));

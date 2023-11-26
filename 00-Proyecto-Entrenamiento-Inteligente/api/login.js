@@ -35,6 +35,22 @@ router.post('/login', (req, res) => {
     })
 })
 
+/*connection.query(mysql, [body.Id, body.correo, body.password], (error, results, fields) =>{
+
+    if(error){
+        return res.status(400).json({
+            ok: false,
+            mensaje: 'Error al crear usuario',
+            errors: error
+        })
+    }
+
+    res.status(201).json({
+        ok: true,
+        usuario: results
+    })
+});*/
+
 
 
 module.exports = router;
