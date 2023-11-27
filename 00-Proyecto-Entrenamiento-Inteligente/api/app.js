@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const entrenamiento = require('./routes/entrenamiento');
+const usuario = require('./routes/usuario');
 
 const app = express();
 
@@ -29,5 +30,6 @@ app.use(cors({
 }))
 
 app.use('/entrenamiento',entrenamiento);
+app.use('/usuario',usuario);
 
 app.listen(3000, () => console.log('Server started on port 3000'));

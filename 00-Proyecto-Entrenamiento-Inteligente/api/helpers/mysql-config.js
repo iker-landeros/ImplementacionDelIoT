@@ -6,7 +6,7 @@ let pool = mysql.createPool({
     user: process.env.DBUSER || 'admin',
     password: process.env.DBPASSWORD || 'Iklandia1!',
     database: process.env.DATABASE || 'SmartFlex',
-    port: process.env.DBPORT || 3006,
+    port: process.env.DBPORT || 3306,
     dateStrings: true,
     connectTimeout:60000
 });
